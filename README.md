@@ -43,22 +43,6 @@ Ultra-lightweight brightness control tool for external monitors on Windows
 - Visual Studio 2019 or later
 - .NET Framework 4.7.2 SDK
 
-### Build Instructions
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/light-brightness-control.git
-
-# Navigate to project directory
-cd light-brightness-control
-
-# Open LightBrightnessControl.sln in Visual Studio
-# Or build via command line:
-msbuild LightBrightnessControl.sln /p:Configuration=Release
-```
-
-The compiled EXE will be located in the `bin/Release/` directory
-
 ## Technical Details
 
 - Built with WinForms, zero third-party dependencies
