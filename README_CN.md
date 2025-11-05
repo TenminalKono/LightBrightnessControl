@@ -33,29 +33,6 @@
 - 如果检测不到显示器，请在显示器 OSD 菜单中启用 DDC/CI 选项
 - 首次设置开机自启动时，可能需要以管理员权限运行
 
-## 构建方法
-
-### 环境要求
-
-- Visual Studio 2019 或更高版本
-- .NET Framework 4.7.2 SDK
-
-### 构建步骤
-
-```bash
-# 克隆仓库
-git clone https://github.com/yourusername/light-brightness-control.git
-
-# 打开项目
-cd light-brightness-control
-
-# 使用 Visual Studio 打开 LightBrightnessControl.sln
-# 或使用命令行构建：
-msbuild LightBrightnessControl.sln /p:Configuration=Release
-```
-
-生成的 EXE 文件位于 `bin/Release/` 目录
-
 ## 技术细节
 
 - 使用 WinForms 构建，无第三方依赖
