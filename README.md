@@ -1,6 +1,10 @@
 # LightBrightnessControl
 Ultra-lightweight brightness control tool for external monitors on Windows
 
+---
+
+[中文文档](README_CN.md)
+
 ## Features
 
 - **Minimal Memory Footprint** - Less than 5MB RAM usage during runtime
@@ -70,6 +74,4 @@ MIT License - see [LICENSE](LICENSE) file for details
 
 Inspired by [Twinkle Tray](https://github.com/xanderfrangos/twinkle-tray), this project focuses on providing an even lighter alternative.
 
----
 
-[中文文档](README_CN.md)
