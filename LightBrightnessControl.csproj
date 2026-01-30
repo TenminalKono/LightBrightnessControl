@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    
+    <!-- 程序集信息 -->
+    <AssemblyName>LightBrightnessControl</AssemblyName>
+    <RootNamespace>LightBrightnessControl</RootNamespace>
+    <Version>2.0.0</Version>
+    <Company>LightBrightnessControl</Company>
+    <Product>Light Brightness Control</Product>
+    <Description>极致轻量的Windows显示器亮度调节工具</Description>
+    
+    <!-- 全局化设置 -->
+    <InvariantGlobalization>true</InvariantGlobalization>
+    
+    <!-- 应用程序图标 -->
+    <ApplicationIcon>64x64.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <!-- Release 编译优化 -->
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <Optimize>true</Optimize>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+  <!-- 发布配置（仅在 dotnet publish 时生效） -->
+  <PropertyGroup Condition="'$(PublishProtocol)' != ''">
+    <PublishTrimmed>true</PublishTrimmed>
+    <TrimMode>link</TrimMode>
+    <PublishSingleFile>true</PublishSingleFile>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+    <PublishReadyToRun>true</PublishReadyToRun>
+  </PropertyGroup>
+
+  <!-- 不引入任何第三方依赖 -->
+
+  <!-- 复制图标文件到输出目录 -->
+  <ItemGroup>
+    <Content Include="64x64.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
