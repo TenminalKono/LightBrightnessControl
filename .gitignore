@@ -1,9 +1,12 @@
 # .gitignore for LightBrightnessControl
 
-# Build outputs
+# Build & release outputs
 bin/
 obj/
+dist/
+release/
 publish/
+*.zip
 
 # Visual Studio
 .vs/
@@ -30,11 +33,10 @@ Desktop.ini
 # macOS
 .DS_Store
 
-# User-specific files
+# User-specific & temporary files
 *.rsuser
-*.user
 *.log
 *.tmp
 
-# Settings file (generated at runtime)
+# Runtime settings file
 settings.json
